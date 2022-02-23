@@ -9,7 +9,18 @@ const app = new Vue({
         title: 'Hello Vue World!',
         inputMessage: '',
         imgUrl: 'https://picsum.photos/200/300',
+        className: 'p-font', //gli aggiungo la classe p-font
+    },
+
+    methods:{
+        printMessage: function(){
+            alert(`Messagio dell'utente: ${this.inputMessage}`)
+        }
     }
 })
 
-console.log(app);
+console.log(app.title);
+console.log(app.className);
+
+// voglio che prenda la classe di p e lo metta in display NamedNodeMap
+// poi nella fnuzione print message quando clicco il bottone mi stampa il p

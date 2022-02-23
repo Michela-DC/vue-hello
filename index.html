@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <title>Vue Hello</title>
 </head>
@@ -14,16 +15,17 @@
         <div id="app">
 
             <h1>{{ title }}</h1>
-
+            
             <div>
-                <label for="user-message">Srivi un messaggio </label>
-                <input type="text" id="user-message" v-model="inputMessage">
-            </div>
-
-
-            <figure>
                 <img v-bind:src="imgUrl" alt="">
-            </figure>
+                <p v-bind:class="className">Lorem ipsum dolor sit amet.</p>
+                <!-- con la forma contratta potevo scrivere :class="className" -->
+                <div>
+                    <label for="user-message">Srivi un messaggio </label>
+                    <input type="text" id="user-message" v-model="inputMessage">
+                </div>
+                <button @clicK ="printMessage">Print Message</button>
+            </div>
 
         </div>
 

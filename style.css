@@ -1,0 +1,21 @@
+#app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.p-font {
+    color: red;
+    font-style: italic;
+}
+
+button {
+    display: block;
+    margin-top: 30px;
+}
