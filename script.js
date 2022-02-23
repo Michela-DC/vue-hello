@@ -6,7 +6,10 @@
 const app = new Vue({
     el: '#app',
     data: {
-        message: 'Hello Vue World!',
+        title: 'Hello Vue World!',
+        inputMessage: '',
         imgUrl: 'https://picsum.photos/200/300',
     }
 })
+
+console.log(app);
