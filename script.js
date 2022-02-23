@@ -22,5 +22,3 @@ const app = new Vue({
 console.log(app.title);
 console.log(app.className);
 
-// voglio che prenda la classe di p e lo metta in display NamedNodeMap
-// poi nella fnuzione print message quando clicco il bottone mi stampa il p
